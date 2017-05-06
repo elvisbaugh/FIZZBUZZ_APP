@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="FizzBuzzLogic\Buzz.cs" />
     <Compile Include="FizzBuzzLogic\Fizz.cs" />
+    <Compile Include="FizzBuzzLogic\FizzOrBuzz.cs" />
     <Compile Include="Interfaces\IFizzOrBuzz.cs" />
     <Compile Include="Models\FizzBuzz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

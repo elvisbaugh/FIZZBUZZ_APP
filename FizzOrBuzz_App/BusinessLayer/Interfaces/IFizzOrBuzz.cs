@@ -8,6 +8,6 @@ namespace BusinessLayer.Interfaces
 {
     public interface IFizzOrBuzz
     {
-        string ReturnStringValueForInteger(int value);
+        int ReturnIntegerValueFor(int value);
     }
 }
