@@ -17,7 +17,7 @@ namespace BusinessLayer.FizzBuzzLogic
 
         }
 
-        public int ReturnFizzOrBuzz(int value)
+        public bool ReturnFizzOrBuzz(int value)
         {
             return getFizzOrBuzz.ReturnIntegerValueFor(value);
         }

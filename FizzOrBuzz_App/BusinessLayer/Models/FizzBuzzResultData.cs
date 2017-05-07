@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+namespace BusinessLayer.Models
 {
-    public class FizzBuzz
+    public class FizzBuzzResultData
     {
         public string Result { get; set; }
     }

@@ -9,9 +9,9 @@ namespace BusinessLayer.FizzBuzzLogic
 {
     public class Buzz : IFizzOrBuzz
     {
-        public int ReturnIntegerValueFor(int value)
+        public bool ReturnIntegerValueFor(int value)
         {
-            return value % 5;
+            return value % 5 == 0;
         }
 
         
