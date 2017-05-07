@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class FizzBuzz
+    public class FizzBuzzData
     {
         public string Result { get; set; }
     }
