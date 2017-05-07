@@ -19,9 +19,26 @@ namespace FizzOrBuzz_App.Controllers
         [HttpPost]
         public ActionResult Index(int value)
         {
-            FizzOrBuzz getData = new FizzOrBuzz(new Buzz());
+           FizzOrBuzz getData = new FizzOrBuzz(new Buzz());
+
            bool isBuzz =   getData.ReturnFizzOrBuzz(value);
-            return View();
+
+            //strategy changed
+            getData.getFizzOrBuzz = new Fizz();
+
+            bool isFizz = getData.ReturnFizzOrBuzz(value);
+
+            FizzBuzzData getString = new FizzBuzzData();
+
+            if(isBuzz)
+            {
+                getString.Result = "Buzz";
+            }
+            else if(isFizz)
+            {
+                getString.Result = "Fizz";
+            }
+            return View(getString);
         }
     }
 }

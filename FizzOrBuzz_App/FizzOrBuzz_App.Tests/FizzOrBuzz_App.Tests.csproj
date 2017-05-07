@@ -53,6 +53,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{229783CA-4799-42C1-924E-177FCFB87B28}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FizzOrBuzz_App\FizzOrBuzz_App.csproj">
       <Project>{DE93FC89-5346-48D8-B9D7-7D51B489A1EE}</Project>
       <Name>FizzOrBuzz_App</Name>
