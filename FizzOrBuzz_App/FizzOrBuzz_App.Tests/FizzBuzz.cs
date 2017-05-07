@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FizzOrBuzz_App.Controllers;
 using System.Web.Mvc;
 using BusinessLayer;
+using BusinessLayer.Models;
 
 namespace FizzOrBuzz_App.Tests
 {
@@ -22,7 +23,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(5) as ViewResult;
-            var buzz = (FizzBuzzData) result.ViewData.Model;
+            var buzz = (FizzBuzzResultData) result.ViewData.Model;
             Assert.AreEqual("Buzz", buzz.Result);
         }
 
@@ -31,7 +32,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(10) as ViewResult;
-            var buzz = (FizzBuzzData)result.ViewData.Model;
+            var buzz = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual("Buzz", buzz.Result);
         }
 
@@ -40,7 +41,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(15) as ViewResult;
-            var buzz = (FizzBuzzData)result.ViewData.Model;
+            var buzz = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual("Buzz", buzz.Result);
         }
 
@@ -49,7 +50,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(3) as ViewResult;
-            var fizz = (FizzBuzzData)result.ViewData.Model;
+            var fizz = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual("Fizz", fizz.Result);
         }
 
@@ -58,7 +59,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(6) as ViewResult;
-            var fizz = (FizzBuzzData)result.ViewData.Model;
+            var fizz = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual("Fizz", fizz.Result);
         }
 
@@ -67,7 +68,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(9) as ViewResult;
-            var fizz = (FizzBuzzData)result.ViewData.Model;
+            var fizz = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual("Fizz", fizz.Result);
         }
 
@@ -76,7 +77,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(7) as ViewResult;
-            var nothing = (FizzBuzzData)result.ViewData.Model;
+            var nothing = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual(null, nothing.Result);
         }
 
@@ -85,7 +86,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(8) as ViewResult;
-            var nothing = (FizzBuzzData)result.ViewData.Model;
+            var nothing = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual(null, nothing.Result);
         }
 
@@ -94,7 +95,7 @@ namespace FizzOrBuzz_App.Tests
         {
             var controller = new HomeController();
             var result = controller.Index(19) as ViewResult;
-            var nothing = (FizzBuzzData)result.ViewData.Model;
+            var nothing = (FizzBuzzResultData)result.ViewData.Model;
             Assert.AreEqual(null, nothing.Result);
         }
     }

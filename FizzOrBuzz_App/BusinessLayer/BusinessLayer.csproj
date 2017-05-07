@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,6 +45,7 @@
     <Compile Include="FizzBuzzLogic\Fizz.cs" />
     <Compile Include="FizzBuzzLogic\FizzOrBuzz.cs" />
     <Compile Include="Interfaces\IFizzOrBuzz.cs" />
+    <Compile Include="Models\FizzBuzzResultData.cs" />
     <Compile Include="Models\FizzOrBuzzData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
